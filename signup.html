@@ -1,25 +1,80 @@
 <html>
     <head>
-        <title></title>
+        <title>Formulario</title>
+        <link rel="icon" type="image/ico" href="icons/icon.png"/>
     </head>
-    <body bgcolor="#3E6F9B">
-        <form name="form" action="" method="POST">
-        
-        <center><b><h1>Formulario de Registro</h1></b></center>
-        <center>Nombres: <font color="red"> *</font> <input type="text"</center><br><br>
-        <center>Apellidos:<font color="red"> *</font><input type="text"</center><br><br>
-        <center>Nro Identificacion: <font color="red"> *</font><input type="text"</center><br><br>
-        <center>Genero: <font color="red"> *</font><input type="radio"</center>Masculino <input type="radio"</center>Femenino</center><br>
-        <center>Telefono: <input type="text"</center><br></center><br>
-        <center>Celular: <font color="red"> *</font><input type="text"</center><br></center><br>
-        <center>Departamento Nac: <font color="red"> *</font><input type="text"</center><br></center><br>
-        <center>Ciudad de Nac: <font color="red"> *</font><input type="text"</center><br></center><br>
-        <center>Correo electronico: <font color="red"> *</font><input type="text"</center><br></center><br>
-        <center>Contraseña: <font color="red"> *</font><input type="text"</center><br></center><br>
-        <center>Confirmar contraseña: <font color="red"> *</font><input type="text"</center><br></center><br>
-        <center>Foto: <input type="file"</center><br></center><br>
-        <center>Tipo identificacion: <font color="red"> *</font><input type="text"</center><br></center><br>
-        <center><input type="submit"value="Registrarme"</center><br>
+    <body bgcolor="#A5A96E">
+            <form name="form" action="#" method="GET">
+            <table align="center" border="1">
+                <tr><td colspan="2"><center><font size="7" color="black" face="Tw Cen MT"><center><b>Formulario de Registro</b></center><center><img src="images/reg.png" width="80"></center></td></tr></font>
+        <tr>
+            <td>Nombres: <font color="red"> *</font></td><td><input type="text" name="nom" required></td>
+        </tr>
+        <tr>
+            <td>Apellidos:<font color="red"> *</font></td><td><input type="text" name="apell" required></td>
+        </tr>
+        <tr>
+            <td>Nro Identificacion: <font color="red"> *</font></td><td><input type="text" name="id" required></td>
+        </tr>
+        <tr>
+            <td>Genero: <font color="red"> *</font></td><td><input type="radio" name="genero" value="masculino" required>Masculino <input type="radio" name="genero" value="femenino" required>Femenino</td>
+        </tr>
+        <tr>
+            <td>Telefono: </td><td><input type="text" name="tel" required></td>
+        </tr>
+        <tr>
+            <td>Celular: <font color="red"> *</font></td><td><input type="text" name="cel" required></td>
+        </tr>
+        <tr>
+            <td>Departamento Nac: <font color="red"> *</font></td><td><input type="text" name="depto" list="deptos" required></td>
+        </tr>
+        <tr>
+            <td>Ciudad de Nac: <font color="red"> *</font></td><td><input type="text" name="ciu" list="ciudad" required></td>
+        </tr>
+        <tr>
+            <td>Correo electronico: <font color="red"> *</font></td><td><input type="email" name="correo" placeholder="user@email.com" required></td>
+        </tr>
+        <tr>
+            <td>Contraseña: <font color="red"> *</font></td><td><input type="text" name="contr" required></td>
+        </tr>
+        <tr>
+            <td>Confirmar contraseña: <font color="red"> *</font></td><td><input type="text" name="conf" required></td>
+        </tr>
+        <tr>
+            <td>Foto:</td><td><input type="file" name="archivo" required></td>
+        </tr>
+        <tr>
+            <td>Tipo identificacion: <font color="red"> *</font></td><td><input type="text" name="tipid" list="tipoid" required></td>
+        </tr>
+    </table><br>
+        <center><input type="submit" value="Registrarme"></center>             
     </form>
+    <datalist id="deptos">
+        <option value="Amazonas">
+        <option value="Antioquia">  
+        <option value="Arauca">
+        <option value="Atlantico">
+        <option value="Bolivar">
+        <option value="Boyaca">
+        <option value="Caldas">
+        <option value="Cauca"> 
+        <option value="Cundinamarca">  
+        <option value="Nariño">
+    </datalist>
+    <datalist id="ciudad">
+        <option value="Pasto">
+        <option value="Ipiales">  
+        <option value="La Union">
+        <option value="Buesaco">
+        <option value="Tuquerres">
+        <option value="Chachagui">   
+    </datalist>
+    <datalist id="tipoid">
+        <option value="(CC) cedula de ciudadania">
+        <option value="(TI) tarjeta de identidad">  
+        <option value="(TP) tarjeta pasaporte">
+        <option value="(RC) registro civil">
+         <option value="(CE) cedula de extranjeria">  
+        </datalist>
     </body>
 </html>
