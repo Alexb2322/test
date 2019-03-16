@@ -1,25 +1,23 @@
 <html>
     <head>
-
+        <title>Calculadora</title>     
     </head>
-    <body>
+    <body bgcolor="#196C93">
         <form action="calculadora.php" method="POST">
-        <center><b><h1>CALCULADORA BASICA</h1></b></center>
-        <center>Primer numero:</center><br>
-        <center><input type="number" name="n1" ></center><br><br>
-        <center>Segundo numero:</center><br>
-        <center><input type="number" name="n2" ></center><br><br>
-        <center>Tipo operacion</center><br>
+        <table align="center" border="1">
+            <tr><td bgcolor="#3687AC"><center><b><h2>CALCULADORA BASICA</h2></b></center>
+            <tr><td bgcolor="#6D94A7"><center><b>Primer numero:</b></center><center><input type="number" name="n1" ></center><br>
+            <tr><td bgcolor="#6D94A7"><center><b>Segundo numero:</b></center><center><input type="number" name="n2" ></center><br>
+            <tr><td bgcolor="#6D94A7"><center><b>Tipo operacion</b></center>
         <center>
         <select name="tipo_op"></center><br><br>
-        
-        <option value="1">sumar</option>
-        <option value="2">restar</option>  
+        <option value="1">Sumar</option>
+        <option value="2">Restar</option>  
         <option value="3">Multiplicar</option>
         <option value="4">Dividir</option>
-        </select>  
-        <center><input type="submit"value="Calcular"</center> 
-        
+        </select><br><br>   
+        </table><br>
+        <center><input type="submit"value="Calcular"></center>
         </form>
     </body>
 </html>

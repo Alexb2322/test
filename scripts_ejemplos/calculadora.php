@@ -3,9 +3,9 @@ $num1=$_POST['n1'];
 $num2=$_POST['n2'];
 $oper=$_POST['tipo_op'];
 
-echo "Numero 1: ". $num1."<br>";
+echo "<div align=\"center\">Numero 1: ". $num1."<br>";
 echo "Numero 2: ". $num2."<br>";
-echo "Tipo operacion: " .$oper;
+echo "Tipo operacion: " .$oper."<br>";
 
 if($oper=="1")
     $resul=$num1+$num2;
