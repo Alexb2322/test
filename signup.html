@@ -14,6 +14,9 @@
             <td>Apellidos:<font color="red"> *</font></td><td><input type="text" name="apell" pattern="[A-Za-z]{3,15}" title="Solo se aceptan letras" required></td>
         </tr>
         <tr>
+        <tr>
+            <td>Tipo identificacion: <font color="red"> *</font></td><td><input type="text" name="tipid" list="tipoid" required></td>
+        </tr>
             <td>Nro Identificacion: <font color="red"> *</font></td><td><input type="text" name="id" pattern="[0-9]{7,12}" title="Solo se aceptan numeros"required></td>
         </tr>
         <tr>
@@ -43,12 +46,9 @@
         <tr>
             <td>Foto:</td><td><input type="file" name="archivo" required></td>
         </tr>
-        <tr>
-            <td>Tipo identificacion: <font color="red"> *</font></td><td><input type="text" name="tipid" list="tipoid" required></td>
-        </tr>
     </table><br>
         <center><input type="submit" value="Registrarme"></center>             
-    </form>
+            </form>
     <datalist id="deptos">
         <option value="Amazonas">
         <option value="Antioquia">  
